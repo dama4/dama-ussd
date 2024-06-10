@@ -96,8 +96,8 @@ app.post('/ussd', (req, res) => {
             } else {
                 // Voting option selected
                 response = userLanguages[phoneNumber] === 'en' ? 
-                    `CON Select a candidate:\n1. kayitesi chartine\n2. chartine mutesi\n3. epiphanie nyira\n4. umugwaneza henriette\n5. niyomukiza damars` : 
-                    `CON Hitamo umukandida:\n1. kayitesi chartine\n2. chartine mutesi\n3. epiphanie nyira\n4. umugwaneza henriette\n5. niyomukiza damars`;
+                    `CON Select a candidate:\n1. UWINEZA Esther\n2. UWASE Lydie\n3. DUSENGE KWIZERA Rois\n4. KAMALIZA\n5. NIYOMUKIZA Damars` : 
+                    `CON Hitamo umukandida:\n1. UWINEZA Esther\n2. UWASE Lydie\n3. DUSENGE KWIZERA Rois\n4. KAMALIZA\n5. NIYOMUKIZA Damars`;
             }
         } else if (userInput[2] === '2') {
             // View votes option selected
