@@ -9,10 +9,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Database connection details
 const dbConfig = {
-    host: 'baoivsz1j04goy1gqffg-mysql.services.clever-cloud.com',
-    user: 'uym9wiakrb7quu3n',
-    password: 'KuOtcpkcHdHWtIkIDJzX', // Replace with your MySQL password
-    database: 'baoivsz1j04goy1gqffg'
+    host: 'bfqmghmxidn5jslxbxkr-mysql.services.clever-cloud.com',
+    user: 'uidfyh4qnvnsdbwm',
+    password: 'B38TwPiuRT2kMpwqRynw', // Replace with your MySQL password
+    database: 'bfqmghmxidn5jslxbxkr'
 };
 
 let db;
@@ -69,7 +69,7 @@ app.post('/ussd', (req, res) => {
     // Determine next action based on user input
     if (userInput.length === 1 && userInput[0] === '') {
         // First level menu: Language selection
-        response = `CON Welcome to Mayor voting booth\n`;
+        response = `CON Welcome to Damars voting booth\n`;
         response += `1. English\n`;
         response += `2. Kinyarwanda`;
     } else if (userInput.length === 1 && userInput[0] !== '') {
